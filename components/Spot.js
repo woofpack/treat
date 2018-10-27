@@ -1,13 +1,10 @@
-import React from 'react';
-import { View, TouchableOpacity, Text, Image } from 'react-native';
-import { Camera } from 'expo';
-import GestureRecognizer, {
-  swipeDirections
-} from 'react-native-swipe-gestures';
-import fetchService from '../services/fetch';
-import geoServices from '../services/geo';
+import React from "react";
+import { View, TouchableOpacity, Image } from "react-native";
+import { Camera } from "expo";
+import fetchService from "../services/fetch";
+import geoServices from "../services/geo";
 
-import styles from '../styles';
+import styles from "../styles";
 
 export default class Picture extends React.Component {
   state = {
@@ -33,7 +30,7 @@ export default class Picture extends React.Component {
       const { lat, lng, info } = await fetchService.spot(buffer, zip);
 
       const { name, photo, description, shelterName, url } = info;
-      navigate('Mappy', {
+      navigate("Mappy", {
         lat,
         lng,
         name,
@@ -66,7 +63,7 @@ export default class Picture extends React.Component {
   cam = () => (
     <TouchableOpacity style={styles.paw} onPress={this.spot}>
       <Image
-        source={require('../assets/paw_white.png')}
+        source={require("../assets/paw_white.png")}
         style={styles.pawImage}
       />
     </TouchableOpacity>
@@ -76,11 +73,11 @@ export default class Picture extends React.Component {
     <View style={styles.overlay}>
       <View style={styles.loaderContainer}>
         <Image
-          source={require('../assets/loading.gif')}
+          source={require("../assets/loading.gif")}
           style={styles.loader}
         />
         <Image
-          source={require('../assets/logo_3.png')}
+          source={require("../assets/logo_3.png")}
           style={styles.loaderLogo}
         />
       </View>

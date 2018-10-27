@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
-const Dimensions = require('Dimensions');
-const { width, height } = Dimensions.get('window');
+const Dimensions = require("Dimensions");
+const { width, height } = Dimensions.get("window");
 
 export default StyleSheet.create({
   camera: {
@@ -16,20 +16,20 @@ export default StyleSheet.create({
     flex: 1,
     width: width,
     height: height,
-    backgroundColor: 'rgba(255, 243, 93,0.5)',
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: "rgba(255, 243, 93,0.5)",
+    justifyContent: "center",
+    alignItems: "center"
   },
 
-  gesture: { flex: 1, backgroundColor: '#fff' },
+  gesture: { flex: 1, backgroundColor: "#fff" },
 
   /* ------------------------------- */
   paw: {
-    alignSelf: 'center',
+    alignSelf: "center",
     marginTop: height / 1.23,
     borderRadius: 100,
     borderWidth: 4,
-    borderColor: '#fff',
+    borderColor: "#fff",
     padding: 15
   },
   pawImage: {
@@ -53,13 +53,13 @@ export default StyleSheet.create({
   },
   loaderContainer: {
     marginTop: 300,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: "center",
+    alignItems: "center"
   },
   loader: {
     height: height / 5,
     width: width,
-    transform: [{ rotate: '-90deg' }],
+    transform: [{ rotate: "-90deg" }],
     marginBottom: 120
   },
   /* ------------------------------- */
@@ -71,17 +71,17 @@ export default StyleSheet.create({
   info: {
     width: width,
     height: 150,
-    backgroundColor: '#FFF',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    backgroundColor: "#FFF",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
   },
   infoPic: {
     height: 90,
     width: 90,
     borderRadius: 45,
     marginLeft: 20,
-    borderColor: '#000'
+    borderColor: "#000"
   },
   infoContainer: {
     marginRight: 80,
@@ -89,27 +89,26 @@ export default StyleSheet.create({
   },
   infoName: {
     marginBottom: 5,
-    justifyContent: 'flex-end',
-    alignItems: 'flex-end',
-    fontWeight: '900'
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    fontWeight: "900"
   },
   infoDescription: {
     fontSize: 12
   },
   infoButtonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+    flexDirection: "row",
+    justifyContent: "space-between"
   },
   infoButton: {
     marginTop: 10,
     padding: 10,
-    borderColor: '#000',
+    borderColor: "#000",
     borderWidth: 1,
-    // backgroundColor: '#000',
-    textAlign: 'center',
-    color: '#000',
+    textAlign: "center",
+    color: "#000",
     borderRadius: 10,
-    fontWeight: '700',
+    fontWeight: "700",
     width: 90,
     fontSize: 11
   }

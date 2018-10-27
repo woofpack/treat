@@ -1,5 +1,5 @@
 const config = {
-  FETCH_URL: 'http://4ea58b3a.ngrok.io/api'
+  FETCH_URL: "https://86c1dbaa.ngrok.io/api"
 };
 
 export default config;
